@@ -34,7 +34,7 @@ import (
 	"net/smtp"
 	"time"
 
-	"github.com/Dev-Gopi/otp-sdk/otp"
+	"github.com/dev-gopi/otp-sdk/otp"
 )
 
 func main() {
