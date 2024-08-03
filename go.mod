@@ -1,4 +1,4 @@
-module github.com/dev-gopi/otp-sdk
+module github.com/Dev-Gopi/otp-sdk
 
 go 1.19
 
