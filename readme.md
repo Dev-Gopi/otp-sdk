@@ -19,7 +19,7 @@ Next, install the Redis client for Go:
 
 ```bash
 go get github.com/go-redis/redis/v8
-go get github.com/dev-gopi/otp-sdk/otp
+go get github.com/dev-gopi/otp-sdk
 ```
 
 ## Prerequisites
@@ -66,6 +66,7 @@ To use the OTP package, you first need to initialize the Redis client and set up
 import (
  "time"
  "github.com/go-redis/redis/v8"
+ "github.com/dev-gopi/otp-sdk/otp"
 )
 
 func main() {
@@ -75,7 +76,7 @@ func main() {
  maxAttempts := 3
  expirationTime := 5 * time.Minute
 
- otpService, err := Initialize(redisAddr, redisPassword, redisDB, maxAttempts, expirationTime)
+ otpService, err := otp.Initialize(redisAddr, redisPassword, redisDB, maxAttempts, expirationTime)
  if err != nil {
   panic(err)
  }
